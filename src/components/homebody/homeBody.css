@@ -1,0 +1,12 @@
+.homeBody{
+    background-color: rgb(83, 81, 81);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.homeBody>h2{
+    padding-left: 50%;
+}

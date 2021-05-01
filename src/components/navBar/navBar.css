@@ -1,15 +1,16 @@
 .main{
-    height:15vh;
+    height:20vh;
     width: 100%;
-    background-color: rgb(22, 21, 21);
+    background-color: rgb(82, 79, 79);
     display: flex;
 
 
 }
 .main>h1{
-    color: blanchedalmond;
+    color: rgb(2, 2, 2);
     flex: 2;
     margin: 25px;
-    margin-left: 65px;
+    margin-left: 25px;
     font-size: 2.4em;
+
 }
