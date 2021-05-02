@@ -1,0 +1,48 @@
+.adminLogin{
+    background-color: rgb(83, 81, 81);
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: whitesmoke;
+    
+    
+}
+
+.adminForm{
+    display:flex;
+    position: absolute;
+    flex-direction: column;
+    height: 40vh;
+    width: 30vw;
+    background-color: rgb(2, 17, 48);
+    top: 18%;
+    left: 35%;
+    justify-self: center;
+    padding: 10px;
+    
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.formInput>input,.formInput>label,.formInput>button{
+    margin: 7px;
+}
+.lgntxt{
+    margin: auto;
+    font-family: 'Gill Sans';
+}
+.formInput>button{
+    width: 65px;
+    height: 30px;
+    margin-top: 20px;
+}
+.formInput>button:hover{
+    background-color: thistle;
+}

@@ -1,15 +1,28 @@
 import Navbar from './components/navBar/navBar'
 import './App.css';
 import Homebody from './components/homebody/homeBody'
-import adminLogin from './components/loginpage/adminLogin'
-
+import Adminlogin from './components/loginpage/adminLogin'
+import {BrowserRouter as Router,
+Switch,
+Route,
+Redirect,} from "react-router-dom";
+//routes for setting the paths for the pages//
 function App() {
-  
+   
   return (
    <div>
    <Navbar />
-   <Homebody />
-   <adminLogin />
+  <Router>
+      <Switch>
+        {/* paths fot the pages */}
+          <Route path="/" exact >
+            <Homebody />
+          </Route>
+          <Route path="/adminLogin" exact>
+            <Adminlogin />
+          </Route>
+      </Switch>
+  </Router>
    </div>
   );
 }

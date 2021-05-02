@@ -10,7 +10,7 @@ const navBar = () => {
        <div className="main">
            
             <h1 >E-COM</h1>
-            <div style={{flex:".5"}}>
+            <div style={{flex:".4"}}>
             <PageviewIcon style={{height:"43px",width:"43px",margin:"10px",color:"white"}}/>
             <HomeIcon style={{height:"43px",width:"43px",margin:"10px",color:"white",marginTop:"25px"}}/>
             </div>
