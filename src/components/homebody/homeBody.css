@@ -1,12 +1,83 @@
 .homeBody{
     background-color: rgb(83, 81, 81);
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+    
 }
 
-.homeBody>h2{
-    padding-left: 50%;
+.homeText{
+    position: absolute;
+    top: 8%;
+    left: 32%;
+    color: whitesmoke;
+    font-family: "Times New Roman", Times, serif; ;
+    padding: 5px;
 }
+
+
+
+
+.productDis1>img{
+    position: absolute;
+    height: 45vh;
+    width: 30vw;
+    bottom: 20%;
+    display: flex;
+    right: 10%;
+   border-radius: 10%;
+   border-style: double;
+   box-shadow: 10px 10px rgb(32, 32, 34);
+}
+
+.productDis2>img{
+    position: absolute;
+    height: 45vh;
+    width: 30vw;
+    bottom: 20%;
+    display: flex;
+    left: 10%;
+    border-radius: 10%;
+    border-style: double;
+    box-shadow: 10px 10px rgba(32, 32, 34,0.8);
+}
+
+.loginBtn>h2{
+    position: absolute;
+    align-items: center;
+    top: 48%;
+    left: 46%;
+    color: rgb(247, 239, 239);
+    background-color: rgb(2, 17, 48);
+    border-radius: 10%;
+    padding: 6px;
+    box-shadow: 10px 10px rgba(32, 32, 34,0.8)
+}
+
+.shopNow1>h2{
+    position: absolute;
+    align-items: center;
+    bottom: 7%;
+    left: 20%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(126, 126, 129)    ;
+    border-radius: 10%;
+    padding: 6px;
+    box-shadow: 10px 10px rgba(32, 32, 34,0.8)
+}
+
+.shopNow2>h2{
+    position: absolute;
+    align-items: center;
+    bottom: 7%;
+    right: 20%;
+    color: rgb(253, 250, 250);
+    background-color: rgb(126, 126, 129);
+    border-radius: 10%;
+    padding: 6px;
+    box-shadow: 10px 10px  rgba(32, 32, 34,0.8)
+}
+
