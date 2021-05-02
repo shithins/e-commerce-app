@@ -1,0 +1,31 @@
+.main-div{
+    background-color: rgb(243, 242, 242);
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+
+
+
+.profile-info{
+    position: absolute;
+    background-color: rgb(83, 81, 81);
+    height: 45%;
+    width: 60%;
+    left: 20%;
+    top: 10%;
+}
+
+.top-bar{
+    position: absolute;
+    background-color: rgb(83, 81, 81);
+    bottom: 90%;
+    height: 10%;
+    width: 100%;
+}

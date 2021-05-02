@@ -2,6 +2,7 @@ import Navbar from './components/navBar/navBar'
 import './App.css';
 import Homebody from './components/homebody/homeBody'
 import Adminlogin from './components/loginpage/adminLogin'
+import Adminpage from './components/adminpage/adminPage'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -18,9 +19,12 @@ function App() {
           <Route path="/" exact >
             <Homebody />
           </Route>
-          <Route path="/adminLogin" exact>
-            <Adminlogin />
-          </Route>
+          <route path="/adminpage" exact>
+            <Adminpage />
+          </route>
+          <route path="/adminlogin" exact >
+              <Adminlogin />
+          </route>
       </Switch>
   </Router>
    </div>
