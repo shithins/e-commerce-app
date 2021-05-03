@@ -16,16 +16,39 @@
 .profile-info{
     position: absolute;
     background-color: rgb(83, 81, 81);
-    height: 45%;
-    width: 60%;
-    left: 20%;
+    height: 90%;
+    width: 20%;
+    left: 0%;
     top: 10%;
 }
 
 .top-bar{
+    display: flex;
     position: absolute;
-    background-color: rgb(83, 81, 81);
+    background-color: rgb(14, 13, 13);
     bottom: 90%;
     height: 10%;
     width: 100%;
 }
+
+.top-bar>h3{
+    
+    color: white;
+    margin: 20px;
+    margin-left:220px;
+    
+}
+
+.ad-table>table{
+    position: absolute;
+    height: 40%;
+    width: 80%;
+    left: 20%;
+    border: rgb(12, 11, 12);
+    border-radius: 20px;
+    top: 6%;
+}
+
+table, th, td {
+    border: 1px solid black;
+  }
