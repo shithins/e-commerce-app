@@ -15,7 +15,8 @@ const AdminLogin = () => {
         setPassword(e.target.value)
     }
     const formSubmission = () => {
-        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) {
+        if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) 
+        {
 
                 Axios.post("/admin/login",{email:email,password:password})
                 .then((Response) => {
@@ -36,7 +37,9 @@ const AdminLogin = () => {
                    <input type="email" id="email" placeholder="Enter Email"
                    required onChange={emailHandler}></input>
                    <label htmlFor="password">Password</label>
-                   <input type="password" id="password" placeholder="Enter Password" required onChange={passwordHandler}></input>
+                   <input type="password" id="password" 
+                   placeholder="Enter Password" required 
+                   onChange={passwordHandler}></input>
                     <button type="submit" onClick={formSubmission}>LOGIN</button>
                </div>
            </form>
