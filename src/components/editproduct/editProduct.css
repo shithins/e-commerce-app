@@ -1,0 +1,16 @@
+.edit-main{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 40vw;
+    margin: auto;
+    padding:20px;
+    background-color: rgb(2, 17, 48);
+    color: white;
+    margin-top: 45px;
+}
+
+label{
+    font-weight: 600;
+    margin: 15px;
+}

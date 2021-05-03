@@ -3,6 +3,8 @@ import './App.css';
 import Homebody from './components/homebody/homeBody'
 import Adminlogin from './components/loginpage/adminLogin'
 import Adminpage from './components/adminpage/adminPage'
+import Addproduct from './components/addproduct/addProduct'
+import EditProduct from './components/editproduct/editProduct'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -19,12 +21,19 @@ function App() {
           <Route path="/" exact >
             <Homebody />
           </Route>
-          <route path="/adminpage" exact>
+          <Route path="/adminpage" exact>
             <Adminpage />
-          </route>
-          <route path="/adminlogin" exact >
+          </Route>
+          <Route path="/adminlogin" exact >
               <Adminlogin />
-          </route>
+          </Route>
+          <Route path="/addproduct" exact>
+            <Addproduct />
+          </Route>
+          <Route path="/editproduct" exact>
+            <EditProduct />
+          </Route>
+          
       </Switch>
   </Router>
    </div>
