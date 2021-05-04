@@ -5,6 +5,7 @@ import FileBase from "react-file-base64";
 
 const Addproduct = () => {
     //using use state for setting states
+    const [addSuccess,setAddSuccess]=useState(false)
     const [misField,setMisField]=useState(false)
     const [product,setProduct]=useState("")
     const [details,setDetails]=useState("")
@@ -47,8 +48,9 @@ const Addproduct = () => {
                 return setMisField(true)
     }
     setMisField(false)
+    
      
-       console.log("cqlling")
+       console.log("calling")
        Axios.post("/admin/addproduct",{product:product,
         details:details,category:category,price:price,stock:Stock,image:file})
         .then((Response) => {
@@ -59,7 +61,10 @@ const Addproduct = () => {
     return(
 <div className="add-main">
     <div className={misField?"invalid-msg":"invalid-msg-disabled"}>
-        <h4>&#128286; Add all fields!!!!!</h4>
+        <h4>&#x1F4E2; &#128679; &#128679; Add all fields!!!!!</h4>
+    </div>
+    <div className={addSuccess=="addsucc-msg"}>
+        <h3>YOU SUCCESSFULLY ADDED<br/> THE PRODUCT</h3>
     </div>
     <form>
     <label htmlFor="name">Product name</label>
