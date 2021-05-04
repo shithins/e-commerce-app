@@ -1,12 +1,13 @@
 import React,{useState} from 'react';
 import './adminLogin.css';
 import Axios from "../../axios";
-
+import {useHistory} from 'react-router-dom';
 
 const AdminLogin = () => {
     //useState//
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
+    const history = useHistory() ;
     //functions//
     const emailHandler = (e) =>{
         setEmail(e.target.value)
@@ -14,13 +15,18 @@ const AdminLogin = () => {
     const passwordHandler = (e) => {
         setPassword(e.target.value)
     }
-    const formSubmission = () => {
+    const formSubmission = (e) => {
+        e.preventDefault();
         if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) 
         {
 
                 Axios.post("/admin/login",{email:email,password:password})
                 .then((Response) => {
                     //checking error and responses//
+                    if(Response.data.err){
+                        alert(Response.data.err)
+                    }
+                    else history.push('/adminpage')
                 })
         }
         else {}

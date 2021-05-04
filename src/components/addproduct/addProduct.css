@@ -1,4 +1,4 @@
-.add-main{
+.add-main>form{
     display: flex;
     flex-direction: column;
     height: 70vh;
@@ -13,4 +13,24 @@
 label{
     font-weight: 600;
     margin: 15px;
+}
+.addprod-btn{
+    height: 20px;
+    width: 150px;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.invalid-msg{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    margin-top: 10%;
+    background-color: rgb(230, 215, 10);
+    left: 20px;
+    padding: 10px;
+
+}
+.invalid-msg-disabled{
+    display: none;
 }

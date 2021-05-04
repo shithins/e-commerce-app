@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 import './addProduct.css';
 import Axios from "../../axios";
+import FileBase from "react-file-base64";
 
 const Addproduct = () => {
     //using use state for setting states
+    const [misField,setMisField]=useState(false)
     const [product,setProduct]=useState("")
     const [details,setDetails]=useState("")
     const [category,setCategory]=useState("")
     const [price,setPrice]=useState("")
     const [Stock,setStock]=useState("")
+    const [file,setFile]=useState([])
    //function calling 
    const productHandler = (e) => {
         setProduct(e.target.value)
@@ -25,29 +28,56 @@ const Addproduct = () => {
    const stockHandler = (e) => {
        setStock(e.target.value)
    }
+   const fileHandler = async(files) => {
+       
+       let arr=[]
+   await files.map((img,index) => {
+           let data={
+               Image:img.base64,
+               Type:img.file.type
+           }
+           arr.push(data)
+       })
+      setFile(arr)
+      
+   }
    const productSubmission = (e) => {
-       Axios.post("/admin/page",{product:product,
-        details:details,category:category,price:price,stock:Stock})
+       e.preventDefault()
+       if(product==""||details==""||category==""||price==""||Stock==""||file==['']){
+                return setMisField(true)
+    }
+    setMisField(false)
+     
+       console.log("cqlling")
+       Axios.post("/admin/addproduct",{product:product,
+        details:details,category:category,price:price,stock:Stock,image:file})
         .then((Response) => {
+            alert(Response.data.err)
             //checking error and responses
         } )
    }
     return(
 <div className="add-main">
+    <div className={misField?"invalid-msg":"invalid-msg-disabled"}>
+        <h4>&#128286; Add all fields!!!!!</h4>
+    </div>
+    <form>
     <label htmlFor="name">Product name</label>
-    <input type="text" onChange={productHandler}/>
+    <input type="text" onChange={productHandler} required/>
     <label htmlFor="details">Product Details</label>
-    <input type="text" onChange={detailHandler} />
+    <input type="text" onChange={detailHandler} required/>
     <label htmlFor="category">Category</label>
-    <input type="text" onChange={categoryHandler} />
+    <input type="text" onChange={categoryHandler} required/>
     <label htmlFor="price">Price</label>
-    <input type="number" onChange={priceHandler} />
+    <input type="number" onChange={priceHandler} required/>
     <label htmlFor="stock">Stock</label>
-    <input type="number" onChange={stockHandler} />
+    <input type="number" onChange={stockHandler} required/>
     <label htmlFor="image">Product Image</label>
-    <input type="file" />
-    <button type="submit" onClick={productSubmission}></button>
-    
+    <FileBase type="file" multiple={true} 
+    onDone = {fileHandler} required/>
+    <button type="submit" className="addprod-btn" onClick={productSubmission}>Add Product</button>
+    </form>
+
 
 </div>
     )
