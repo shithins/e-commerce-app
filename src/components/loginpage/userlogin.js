@@ -15,7 +15,16 @@ const Userlogin = () => {
             <h4>You reached under the right ROOF</h4>
             </div>
             <div className="login-area">
-                <div className="log-curve"></div>
+                <div className="log-curve">
+                 </div>
+                 
+                     <input type="email" 
+                     placeholder="Email Address" required></input>
+                     <input type="password"  
+                   placeholder="Enter Password" required></input>
+                   <h6>forgot password</h6>
+                  <button>LOGIN</button>
+                  <h5>Create New Account</h5>
             </div>
         </div>
     )

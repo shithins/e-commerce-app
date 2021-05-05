@@ -89,3 +89,41 @@
     border-radius: 50%;
     margin-top: -55px;
 }
+.login-area>input{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 15px #585c5a,
+                inset -5px -5px 8px rgb(78, 77, 77);
+    color: black;
+
+}.login-area>button{
+      height: 37px;
+      width: 100px;
+      border-radius: 20px;
+      box-shadow: inset 2px 2px 15px #585c5a,
+      inset -5px -5px 8px rgb(78, 77, 77);
+      font-size: 10px;
+      font-weight: bold;
+      padding: 15px ;
+      margin-left: 100px; 
+      margin-top: 30px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 80ms ease-in;
+}
+.login-area>h5{
+    color: rgb(31, 30, 29);
+    margin-left: 95px;
+    padding-top: 10px;
+}
+.login-area>h6{
+    color: rgb(31, 30, 29);
+    margin-left: 55px;
+    padding-top: 10px;
+}

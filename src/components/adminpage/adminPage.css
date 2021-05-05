@@ -36,7 +36,7 @@
     color: white;
     margin: 20px;
     margin-left:23%;
-    
+    cursor: pointer;
     display: inline-block;
     
 }
@@ -110,8 +110,9 @@ table, th, td {
 
   .top-bar>h3:hover{
       
-      background-color: rgb(204, 0, 0);
+    background-color: rgb(66, 64, 64);
       height: fit-content;
+      transform: scale(1.2);
   }
 
   

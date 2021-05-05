@@ -73,6 +73,10 @@ const Addproduct = () => {
         <button onClick={() => history.push("/adminpage")}>Go to Home..</button>
         <button onClick={() => window.location.reload()}>Add Another Product</button>
     </div>
+    <div className="error-msg">
+        <h3>Something Went Wrong <br/> please Try Again</h3>
+        <button onClick={() => window.location.reload()}>Try Again</button>
+    </div>
     <form>
     <label htmlFor="name">Product name</label>
     <input type="text" onChange={productHandler} required/>

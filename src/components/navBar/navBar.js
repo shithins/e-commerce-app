@@ -2,9 +2,10 @@ import React from 'react';
 import './navBar.css';
 import PageviewIcon from '@material-ui/icons/Pageview';
 import HomeIcon from '@material-ui/icons/Home';
+import {Redirect,useHistory} from 'react-router-dom';
 
-const navBar = () => {
-
+const NavBar = () => {
+    const history=useHistory()
 
     return(
        <div className="main">
@@ -22,4 +23,4 @@ const navBar = () => {
 }
 
 
-export default navBar;
+export default NavBar;

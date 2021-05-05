@@ -61,3 +61,25 @@ label{
 .addunsucc-msg{
     display: none;
 }
+.error-msg{
+    position: absolute;
+    background-color: rgb(226, 56, 13);
+    color: rgb(255, 255, 255);
+    left: 34%;
+    top: 25%;
+    padding: 60px;
+    text-align: center;
+}
+
+.error-msg>button{
+
+        height: 40px;
+        width: 150px;
+        padding: 5px;
+        margin: 10px;
+        margin-top: 60px;
+        border-radius: 5px;
+        background-color: rgb(77, 209, 209);
+        color: rgb(3, 2, 2);
+        box-shadow:5px 10px 4px rgba(0, 0, 0, 0.342);
+}
