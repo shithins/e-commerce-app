@@ -2,7 +2,9 @@ import React from 'react';
 import './homeBody.css';
 import image1 from "../../images/samproduct1.jpeg";
 import image2 from "../../images/samproduct2.jpeg";
-const homeBody = () => {
+import {Redirect,useHistory} from 'react-router-dom';
+const HomeBody = () => {
+    const history=useHistory()
     return(
 
         <div className="homeBody">
@@ -17,7 +19,7 @@ const homeBody = () => {
                 <img src={image2} alt="a product"></img>
             </div>
             <div className="loginBtn">
-                <h2>LOGIN</h2>
+                <h2 onClick={ () =>  history.push("/userlogin")}>LOGIN</h2>
             </div>
             <div className="shopNow1">
                 <h2>Shop Now</h2>
@@ -31,4 +33,4 @@ const homeBody = () => {
 
 }
 
-export default homeBody;
+export default HomeBody;

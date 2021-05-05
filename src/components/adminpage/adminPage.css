@@ -114,10 +114,13 @@ table, th, td {
       height: fit-content;
   }
 
-  .top-bar>h3:active{
-      background-color: yellow;
-  }
+  
+.focused-bar{
+    border-bottom:5px solid rgb(65, 209, 214);
+    border-top: 5px solid rgb(65, 209, 214);
+    height: 20px;
 
-  .top-bar .current{
-      background-color: turquoise;
-  }
+}
+
+ 
+  

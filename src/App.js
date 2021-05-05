@@ -5,6 +5,7 @@ import Adminlogin from './components/loginpage/adminLogin'
 import Adminpage from './components/adminpage/adminPage'
 import Addproduct from './components/addproduct/addProduct'
 import EditProduct from './components/editproduct/editProduct'
+import Userlogin from './components/loginpage/userlogin'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -33,7 +34,9 @@ function App() {
           <Route path="/editproduct" exact>
             <EditProduct />
           </Route>
-          
+          <Route path="/userlogin" exact>
+              <Userlogin />
+          </Route>
       </Switch>
   </Router>
    </div>

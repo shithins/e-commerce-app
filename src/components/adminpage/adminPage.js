@@ -16,11 +16,12 @@ const Adminpage = () => {
                 
            </div>
             <div className="top-bar">
-                <h3  onClick={()=> setSelectedOption('order')}>ORDERS</h3>
-                <h3  onClick={()=> setSelectedOption('stock')}>STOCKS</h3>
-                <h3  onClick={()=> setSelectedOption('product')}>PRODUCTS</h3>
+                <h3 className={selectedOption=="order"?"focused-bar":""} onClick={()=> setSelectedOption('order')}>ORDERS</h3>
+                <h3 className={selectedOption=="stock"?"focused-bar":""} onClick={()=> setSelectedOption('stock')}>STOCKS</h3>
+                <h3 className={selectedOption=="product"?"focused-bar":""} onClick={()=> setSelectedOption('product')}>PRODUCTS</h3>
             </div>
            <div className={selectedOption=="order"?'':"table-disabled"}>
+
                <Ordertable />
            </div>
           

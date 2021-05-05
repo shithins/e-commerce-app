@@ -39,7 +39,25 @@ label{
     position: absolute;
     background-color: rgb(19, 165, 14);
     color: rgb(255, 255, 255);
-    left: 31%;
-    top: 40%;
+    left: 32%;
+    top: 25%;
     padding: 75px;
+    text-align: center;
+}
+
+.addsucc-msg>button{
+
+    height: 40px;
+    width: 150px;
+    padding: 5px;
+    margin: 10px;
+    margin-top: 60px;
+    border-radius: 5px;
+    background-color: rgb(77, 209, 209);
+    color: rgb(3, 2, 2);
+    box-shadow:5px 10px 4px rgba(0, 0, 0, 0.342);
+}
+
+.addunsucc-msg{
+    display: none;
 }

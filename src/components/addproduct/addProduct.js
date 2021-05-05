@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import './addProduct.css';
 import Axios from "../../axios";
 import FileBase from "react-file-base64";
+import {useHistory} from 'react-router-dom';
 
 const Addproduct = () => {
+    const history=useHistory()
     //using use state for setting states
     const [addSuccess,setAddSuccess]=useState(false)
     const [misField,setMisField]=useState(false)
@@ -54,17 +56,22 @@ const Addproduct = () => {
        Axios.post("/admin/addproduct",{product:product,
         details:details,category:category,price:price,stock:Stock,image:file})
         .then((Response) => {
-            alert(Response.data.err)
+            if (Response.data.err) alert("Something went wrong please try again later")
+            else setAddSuccess(true)
+        
             //checking error and responses
         } )
    }
+
     return(
 <div className="add-main">
     <div className={misField?"invalid-msg":"invalid-msg-disabled"}>
         <h4>&#x1F4E2; &#128679; &#128679; Add all fields!!!!!</h4>
     </div>
-    <div className={addSuccess=="addsucc-msg"}>
+    <div className={addSuccess?"addsucc-msg":"addunsucc-msg"}>
         <h3>YOU SUCCESSFULLY ADDED<br/> THE PRODUCT</h3>
+        <button onClick={() => history.push("/adminpage")}>Go to Home..</button>
+        <button onClick={() => window.location.reload()}>Add Another Product</button>
     </div>
     <form>
     <label htmlFor="name">Product name</label>
