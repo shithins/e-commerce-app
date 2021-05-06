@@ -1,0 +1,19 @@
+.user-pro-main{
+    background-color: cornsilk;
+    height: 85vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.pro-area{
+    background-color: darkblue;
+    height: 85vh;
+    width: 30%;
+}
+
+.option-area{
+    
+}
