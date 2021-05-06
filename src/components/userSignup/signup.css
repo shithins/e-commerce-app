@@ -1,0 +1,22 @@
+.signup-main{
+    height: 85vh;
+    width: 100%;
+    background:url('../../images/grey-bg.jpg');
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+}
+
+.signup-wel{
+    position: absolute;
+    left: 20%;
+    top: 6%;
+    height: 67vh;
+    width: 300px;
+    background-color: rgb(87, 88, 88);
+    border-radius: 12px;
+    box-shadow: 5px 7px 4px rgb(66, 64, 64);
+    transition: all 1s;
+    animation: from_left 1s;
+    
+}

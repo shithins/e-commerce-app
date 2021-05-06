@@ -58,7 +58,7 @@ label{
     box-shadow:5px 10px 4px rgba(0, 0, 0, 0.342);
 }
 
-.addunsucc-msg{
+.addsucc-disabled{
     display: none;
 }
 .error-msg{
@@ -82,4 +82,8 @@ label{
         background-color: rgb(77, 209, 209);
         color: rgb(3, 2, 2);
         box-shadow:5px 10px 4px rgba(0, 0, 0, 0.342);
+}
+
+.error-msg-disabled{
+    display: none;
 }

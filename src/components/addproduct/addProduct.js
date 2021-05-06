@@ -7,6 +7,7 @@ import {useHistory} from 'react-router-dom';
 const Addproduct = () => {
     const history=useHistory()
     //using use state for setting states
+    const [addError,setAddError]=useState(false)
     const [addSuccess,setAddSuccess]=useState(false)
     const [misField,setMisField]=useState(false)
     const [product,setProduct]=useState("")
@@ -56,9 +57,9 @@ const Addproduct = () => {
        Axios.post("/admin/addproduct",{product:product,
         details:details,category:category,price:price,stock:Stock,image:file})
         .then((Response) => {
-            if (Response.data.err) alert("Something went wrong please try again later")
+            if (Response.data.err) setAddError(true)
             else setAddSuccess(true)
-        
+         
             //checking error and responses
         } )
    }
@@ -68,12 +69,12 @@ const Addproduct = () => {
     <div className={misField?"invalid-msg":"invalid-msg-disabled"}>
         <h4>&#x1F4E2; &#128679; &#128679; Add all fields!!!!!</h4>
     </div>
-    <div className={addSuccess?"addsucc-msg":"addunsucc-msg"}>
+    <div className={addSuccess?"addsucc-msg":"addsucc-disabled"}>
         <h3>YOU SUCCESSFULLY ADDED<br/> THE PRODUCT</h3>
         <button onClick={() => history.push("/adminpage")}>Go to Home..</button>
         <button onClick={() => window.location.reload()}>Add Another Product</button>
     </div>
-    <div className="error-msg">
+    <div className={addError?"error-msg":"error-msg-disabled"}>
         <h3>Something Went Wrong <br/> please Try Again</h3>
         <button onClick={() => window.location.reload()}>Try Again</button>
     </div>

@@ -16,6 +16,7 @@ const Userlogin = () => {
             </div>
             <div className="login-area">
                 <div className="log-curve">
+                    <h2>LOGIN</h2>
                  </div>
                  
                      <input type="email" 

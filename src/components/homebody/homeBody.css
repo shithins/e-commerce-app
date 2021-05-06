@@ -18,6 +18,7 @@
     padding: 5px;
     font-size: larger;
     font-weight: 700;
+    cursor: default;
 }
 
 
@@ -57,7 +58,7 @@
     border-radius: 10%;
     padding: 6px;
     box-shadow: 10px 10px rgba(32, 32, 34,0.8);
-    cursor:  pointer;
+    cursor:  default;
 }
 
 .shopNow1>h2{
@@ -69,7 +70,9 @@
     background-color: rgb(126, 126, 129)    ;
     border-radius: 10%;
     padding: 6px;
-    box-shadow: 10px 10px rgba(32, 32, 34,0.8)
+    box-shadow: 10px 10px rgba(32, 32, 34,0.8);
+    cursor: default;
+    
 }
 
 .shopNow2>h2{
@@ -81,6 +84,6 @@
     background-color: rgb(126, 126, 129);
     border-radius: 10%;
     padding: 6px;
-    box-shadow: 10px 10px  rgba(32, 32, 34,0.8)
+    box-shadow: 10px 10px  rgba(32, 32, 34,0.8);
+    cursor: default;
 }
-

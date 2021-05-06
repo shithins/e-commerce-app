@@ -6,6 +6,7 @@ import Adminpage from './components/adminpage/adminPage'
 import Addproduct from './components/addproduct/addProduct'
 import EditProduct from './components/editproduct/editProduct'
 import Userlogin from './components/loginpage/userlogin'
+import Usersignup from './components/userSignup/signup'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/userlogin" exact>
               <Userlogin />
+          </Route>
+          <Route path="/usersignup" exact>
+            <Usersignup />
           </Route>
       </Switch>
   </Router>
