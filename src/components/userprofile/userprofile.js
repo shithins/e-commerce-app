@@ -13,10 +13,10 @@ const Userprofile = () => {
                     
                 <h2>My Orders</h2>
                 <h2>My Cart</h2>
-                <h2>My </h2>
-                <h2>My Orders</h2>
-                <h2>My Orders</h2>
-                <h2>My Orders</h2>
+                <h2>Account edit </h2>
+                <h2>something</h2>
+                <h2>Help</h2>
+                <h2>Reviews</h2>
                             
 
                 </div>
