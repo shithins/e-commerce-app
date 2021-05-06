@@ -1,16 +1,18 @@
 import React from 'react';
 import './userlogin.css';
 import modelimg from '../../images/wel-model.png'
+import {Redirect,useHistory} from 'react-router-dom';
 
 
 const Userlogin = () => {
+    const history=useHistory()
     return(
         <div className="user-log-main">
             <div className="wel-area">
                 <h1>Hey..</h1>
                 <h3>We are very excited to have you Onboard</h3>
 
-                
+                 
             <img src={modelimg} alt=""/>
             <h4>You reached under the right ROOF</h4>
             </div>
@@ -25,7 +27,7 @@ const Userlogin = () => {
                    placeholder="Enter Password" required></input>
                    <h6>forgot password</h6>
                   <button>LOGIN</button>
-                  <h5>Create New Account</h5>
+                  <h5 onClick={ () => history.push("/usersignup")}> Create New Account</h5>
             </div>
         </div>
     )
