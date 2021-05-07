@@ -8,6 +8,7 @@ import EditProduct from './components/editproduct/editProduct'
 import Userlogin from './components/loginpage/userlogin'
 import Usersignup from './components/userSignup/signup'
 import Userprofile from './components/userprofile/userprofile'
+import Productpage from './components/producthome/producthome'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -44,6 +45,9 @@ function App() {
           </Route>
           <Route path="/userprofile">
             <Userprofile/>
+          </Route>
+          <Route path="/products">
+            <Productpage/>
           </Route>
       </Switch>
   </Router>
