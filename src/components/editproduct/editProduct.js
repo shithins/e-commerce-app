@@ -16,7 +16,7 @@ const EditProduct = () => {
     <input type="number"/>
     <label htmlFor="image">Edit Product Image</label>
     <input type="file"/>
-   
+    <button type="submit">Add changes</button>
 
 </div>
 

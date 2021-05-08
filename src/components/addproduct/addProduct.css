@@ -1,28 +1,42 @@
 .add-main>form{
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     width: 40vw;
     margin: auto;
-    padding:20px;
+    padding:0px;
+    padding-bottom:0px;
     background-color: rgb(2, 17, 48);
     color: white;
-    margin-top: 15px;
+    margin-top: 20px;
+    margin-left: 35%;
+   
+    
+} 
+
+.add-main>form>input{
+    height: 25px;
+    width: 350px;
+    margin-left: 30px;
+    overflow: hidden;
 }
 
-label{
-    font-weight: 600;
-    margin: 15px;
+
+.add-main>form>label{
+    font-weight: 700;
+    margin: 10px;
 }
 .addprod-btn{
-    height: 20px;
+    height: 30px;
     width: 150px;
     margin: auto;
-    margin-top: 10px;
+    margin-bottom: 10px;
     
 }
 
 .invalid-msg{
+    height: 35px;
+    width: 250px;
     position: absolute;
     color: rgb(0, 0, 0);
     margin-top: 10%;
@@ -30,6 +44,9 @@ label{
     left: 20px;
     padding: 10px;
 
+}
+.invalid-msg>h4{
+    font-size: 1.1rem;
 }
 .invalid-msg-disabled{
     display: none;

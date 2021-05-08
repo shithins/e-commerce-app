@@ -8,11 +8,6 @@
     position: relative;
 }
 
-
-
-
-
-
 .profile-info{
     position: absolute;
     background-color: rgb(83, 81, 81);
@@ -34,48 +29,50 @@
 .top-bar>h3{
     
     color: white;
-    margin: 20px;
-    margin-left:23%;
+    margin: 10px;
+    margin-left:22%;
     cursor: pointer;
     display: inline-block;
+    font-size: 1.4rem;
     
 }
 
 .ad-table>table{
-    height: 50px;
+    height: 30px;
     width: 80%;
     margin-left: 50px;
-    
     border-radius: 20px;
-        padding: 10px;
-  
+    padding: 10px;
     overflow: hidden;
+    margin-top: 20px;
+    border: 3px solid black;
 
 }
 
 table, th, td {
-    border: 3px solid black;
+    border-radius: 10px solid black;
     padding: 10px;
     text-align: center;
     
   }
   .ad-table{
-      height: 65vh;
+      height: 68vh;
       overflow: scroll;
-      background-color: rgb(255, 255, 255);
+      background-color: rgb(254, 254, 255);
       position: absolute;
       width: 75%;
-      left: 20%;
-      top:10% ;
+      left: 22%;
+      top:15% ;
       padding: 10px;
+      border: 3px solid black;
 
   }
  .ad-table::-webkit-scrollbar {
     display: none;
   }
   .table-disabled{
-      display: none;
-  }
+    display: none;
+}
 
   .sam-image{
       height: 55px;
@@ -112,14 +109,14 @@ table, th, td {
       
     background-color: rgb(66, 64, 64);
       height: fit-content;
-      transform: scale(1.2);
+      transform: scale(1.1);
   }
 
   
 .focused-bar{
-    border-bottom:5px solid rgb(65, 209, 214);
-    border-top: 5px solid rgb(65, 209, 214);
-    height: 20px;
+    border-bottom:3px solid rgb(65, 209, 214);
+    border-top: 3px solid rgb(65, 209, 214);
+    height: 30px;
 
 }
 

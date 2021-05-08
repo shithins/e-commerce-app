@@ -79,7 +79,7 @@ const Addproduct = () => {
         <button onClick={() => window.location.reload()}>Try Again</button>
     </div>
     <form>
-    <label htmlFor="name">Product name</label>
+    <label htmlFor="name">Product name</label>  
     <input type="text" onChange={productHandler} required/>
     <label htmlFor="details">Product Details</label>
     <input type="text" onChange={detailHandler} required/>

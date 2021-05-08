@@ -13,7 +13,7 @@ const Userlogin = () => {
                 <h3>We are very excited to have you Onboard</h3>
 
                  
-            <img src={modelimg} alt=""/>
+            <img src={modelimg} alt=""/>  
             <h4>You reached under the right ROOF</h4>
             </div>
             <div className="login-area">

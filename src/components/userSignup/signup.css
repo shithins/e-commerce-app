@@ -11,7 +11,7 @@
     position: absolute;
     left: 20%;
     bottom: 6%;
-    height: 67vh;
+    height: 70vh;
     width: 300px;
     background-color: rgb(87, 88, 88);
     border-radius: 12px;
@@ -22,7 +22,7 @@
 
 
 .signup-wel>h1{
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
     color: rgb(2, 17, 48);
 }
@@ -30,7 +30,8 @@
     padding: 5px;
     text-align: center;
     color: rgb(2, 17, 48);
-    margin-top: 5px;
+    margin-top: 3px;
+    font-size: 1.2rem;
 } 
 .signup-wel>img{
     color:rgb(2, 17, 48) ;
@@ -42,7 +43,7 @@
 .signup-area{
     position: absolute;
     top: 6%;
-    height: 67vh;
+    height: 70vh;
     width: 300px;
     background-color: rgb(98, 102, 102);
     border-radius: 12px;
@@ -66,24 +67,25 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top:20px;
+    margin-top:30px;
     border-radius: 10px;
     box-shadow: inset 2px 2px 15px #bbc2be,
                 inset -5px -5px 8px rgb(158, 155, 155);
     color: black;
     padding-left: 10px;
+   
 
 }.signup-area>button{
-      height: 37px;
+      height: 40px;
       width: 100px;
       border-radius: 20px;
       box-shadow: inset 2px 2px 15px #ebeeec,
       inset -5px -5px 8px rgb(207, 203, 203);
       font-size: 10px;
       font-weight: bold;
-      padding: 15px ;
+      padding: 10px ;
       margin-left: 100px; 
-      margin-top: 30px;
+      margin-top: 40px;
       letter-spacing: 1px;
       text-transform: uppercase;
       cursor: pointer;
@@ -95,7 +97,7 @@
 }
 .fn-ln>input{
     height: 25px;
-    width:108px;
+    width:112px;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
@@ -103,7 +105,7 @@
     box-shadow: inset 2px 2px 15px #bbc2be,
                 inset -5px -5px 8px rgb(158, 155, 155);
     color: black;
-    margin-left: 20px;
+    margin-left: 25px;
     padding-left: 10px;
 }
 
@@ -124,10 +126,11 @@
 }
 
 .signup-wel>h4{
-    padding: 5px;
+    padding: 3px;
     text-align: center;
     color: rgb(5, 5, 5);
-    margin-top: 20px;
+    margin-top: 10px;
+    font-size: 1.2rem;
 }
 
 .signup-wel>h2{
@@ -137,9 +140,10 @@
     text-align: center;
     color: rgb(207, 207, 216);
     margin-top: 20px;
-    margin-left: 71px;
+    margin-left: 75px;
     cursor: default;
     background-color: rgb(2, 17, 48);
     border-color: rgb(2, 17, 48);
     border-radius: 8px;
+    font-size: 1.2rem;
 }

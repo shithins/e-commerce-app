@@ -1,16 +1,34 @@
 .edit-main{
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 80vh;
     width: 40vw;
     margin: auto;
-    padding:20px;
+    padding:10px;
+    padding-bottom:0px;
     background-color: rgb(2, 17, 48);
     color: white;
-    margin-top: 45px;
+    margin-top: 20px;
+    margin-left: 35%;
+   
 }
 
-label{
-    font-weight: 600;
-    margin: 15px;
+.edit-main>input{
+    height: 25px;
+    width: 350px;
+    margin-left: 30px;
+    overflow: hidden;
+}
+
+
+.edit-main>label{
+    font-weight: 700;
+    margin: 10px;
+}
+.edit-main>button{
+    height: 30px;
+    width: 200px;
+    padding: 5px;
+    margin-top: 8px;
+    margin-left: 90px;
 }

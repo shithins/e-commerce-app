@@ -9,14 +9,25 @@
     
 }
 
-.homeText{
+.homeText>h1{
     position: absolute;
     top: 5%;
-    left: 32%;
+    left: 30%;
     color: rgb(2, 17, 48);
     font-family: "Times New Roman", Times, serif; ;
     padding: 5px;
-    font-size: larger;
+    font-size: 2.4rem;
+    font-weight: 700;
+    cursor: default;
+}
+.homeText>h3{
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    color: rgb(2, 17, 48);
+    font-family: "Times New Roman", Times, serif; ;
+    padding: 5px;
+    font-size: 1.4rem;
     font-weight: 700;
     cursor: default;
 }
@@ -64,8 +75,8 @@
 .shopNow1>h2{
     position: absolute;
     align-items: center;
-    bottom: 7%;
-    left: 20%;
+    bottom: 5%;
+    left: 17%;
     color: rgb(2, 17, 48);
     background-color: rgb(126, 126, 129)    ;
     border-radius: 10%;
@@ -78,8 +89,8 @@
 .shopNow2>h2{
     position: absolute;
     align-items: center;
-    bottom: 7%;
-    right: 20%;
+    bottom: 5%;
+    right: 17%;
     color: rgb(2, 17, 48);
     background-color: rgb(126, 126, 129);
     border-radius: 10%;
