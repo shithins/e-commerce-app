@@ -5,7 +5,7 @@ import {Redirect,useHistory} from 'react-router-dom';
 
 const Usersignup =() => {
     const history = useHistory()
-    return( 
+    return(  
         <div className="signup-main">
             <div className="signup-wel">
             <h1>Hey..</h1>

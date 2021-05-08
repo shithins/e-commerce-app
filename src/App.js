@@ -9,6 +9,7 @@ import Userlogin from './components/loginpage/userlogin'
 import Usersignup from './components/userSignup/signup'
 import Userprofile from './components/userprofile/userprofile'
 import Productpage from './components/producthome/producthome'
+import SingleproductPage from './components/singleproduct/singleproduct'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path="/products">
             <Productpage/>
+          </Route>
+          <Route path="/singleproduct">
+            <SingleproductPage/>
           </Route>
       </Switch>
   </Router>
