@@ -1,0 +1,74 @@
+.order-main{
+    height: 85vh;
+    width: 100%;
+    background:url('../../images/grey-bg.jpg');
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;   
+}
+
+.order-table-main{
+    position: absolute;
+    height: 75vh;
+    width: 89%;
+    background-color: rgb(91, 91, 97);
+    top: 5%;
+    left: 5%;
+    overflow: scroll;
+    border-radius: 20px;
+    box-shadow: 10px 7px 8px 10px rgb(46, 25, 25);
+}
+
+.order-table-main::-webkit-scrollbar {
+    display: none;
+  }
+
+.solo-box1{
+    position: absolute;
+    height: 150px;
+    width: 80vw;
+    background-color: rgb(91, 95, 95);
+    border: 3px solid black;
+    border-radius: 10px;
+    left: 5%;
+    top: 10%;
+    color: white;
+    box-shadow: 5px 4px 8px 5px rgb(46, 45, 45);
+    
+    
+}
+.solo-box2{
+    position: absolute;
+    height: 150px;
+    width: 80vw;
+    background-color: rgb(91, 95, 95);
+    border: 3px solid black;
+    border-radius: 10px;
+    left: 5%;
+    top: 55%;
+    color: white;
+    box-shadow: 5px 4px 8px 5px rgb(46, 45, 45);
+}
+
+.solo-box3{
+    position: absolute;
+    height: 150px;
+    width: 80vw;
+    background-color: rgb(91, 95, 95);
+    border: 3px solid black;
+    border-radius: 10px;
+    left: 5%;
+    top: 100%;
+    color: white;
+    box-shadow: 5px 4px 8px 5px rgb(46, 45, 45);
+}
+
+table,th,td{
+    padding-left: 95px;
+    margin-top: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}

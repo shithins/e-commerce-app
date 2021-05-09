@@ -10,6 +10,7 @@ import Usersignup from './components/userSignup/signup'
 import Userprofile from './components/userprofile/userprofile'
 import Productpage from './components/producthome/producthome'
 import SingleproductPage from './components/singleproduct/singleproduct'
+import Orderpage from './components/orderspage/orderpage'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -52,6 +53,9 @@ function App() {
           </Route>
           <Route path="/singleproduct">
             <SingleproductPage/>
+          </Route>
+          <Route path="/orders">
+            <Orderpage />
           </Route>
       </Switch>
   </Router>
