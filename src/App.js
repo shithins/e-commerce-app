@@ -11,6 +11,7 @@ import Userprofile from './components/userprofile/userprofile'
 import Productpage from './components/producthome/producthome'
 import SingleproductPage from './components/singleproduct/singleproduct'
 import Orderpage from './components/orderspage/orderpage'
+import Cartpage from './components/cartpage/cartpage'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -56,6 +57,9 @@ function App() {
           </Route>
           <Route path="/orders">
             <Orderpage />
+          </Route>
+          <Route path="/cart">
+            <Cartpage />
           </Route>
       </Switch>
   </Router>
