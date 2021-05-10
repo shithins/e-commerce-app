@@ -1,0 +1,16 @@
+.adminsolo-main{
+    height: 85vh;
+    width: 100%;
+    background: rgb(70, 67, 67);
+    position: relative;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    display: flex;   
+    flex-direction: column;
+    overflow: scroll;
+   
+}
+.adminsolo-main::-webkit-scrollbar {
+    display: none;
+}

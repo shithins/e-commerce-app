@@ -13,6 +13,7 @@ import SingleproductPage from './components/singleproduct/singleproduct'
 import Orderpage from './components/orderspage/orderpage'
 import Cartpage from './components/cartpage/cartpage'
 import Checkoutpage from './components/checkout/checkout'
+import Adminsingle from './components/adminsoloview/adminsolo'
 import {BrowserRouter as Router,
 Switch,
 Route,
@@ -64,6 +65,9 @@ function App() {
           </Route>
           <Route path="/checkout">
             <Checkoutpage />
+          </Route>
+          <Route path="/adminsingle">
+              <Adminsingle />
           </Route>
       </Switch>
   </Router>

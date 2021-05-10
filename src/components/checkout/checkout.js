@@ -20,33 +20,18 @@ const Checkout = () => {
                     <input type="email" placeholder="Email Address"/>
                     <label htmlFor="Phone">Phone</label>
                     <input type="number" placeholder="Contact Number"/>
-                </form>
-            </div>
-            <div className="payment-form">
-                <h3>Payment Option</h3>
-            <form>
-                    <label htmlFor="name">
+                    <label>
                         <input type="radio" />
                         Cash On Delivery
                     </label>
-                    <label htmlFor="address">
+                    <label>
                         <input type="radio" />
                         Net Banking
-                    </label>                   
-                    <label htmlFor="pincode">
-                        <input type="radio" />
-                        UPI
-                    </label>                   
-                    <label htmlFor="email">
-                        <input type="radio" />
-                        Card
-                    </label>                   
-                    
+                    </label>            
                 </form>
-
             </div>
-            <div className="checkout-form3">
-                <img src={checkoutimg} alt="00"/>
+            
+            <div className="checkout-form2">
                 <form>
                 <h3>Hoodies</h3>
                 <h4>Price : 750</h4>
