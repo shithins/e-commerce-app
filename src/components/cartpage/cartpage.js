@@ -1,9 +1,10 @@
 import React from 'react';
 import './cartpage.css'
 import cartimg1 from '../../images/hoodies1.jpeg'
+import {Redirect,useHistory} from 'react-router-dom';
 
 const Cartpage = () => {
-
+        const history = useHistory()
     return(
         <div className="cart-main">
             <h2>MY CART</h2>
@@ -33,7 +34,7 @@ const Cartpage = () => {
                     </select>
                 </div> 
                 <div className="cart-buynow">
-                <button>Buy Now</button>    
+                <button onClick={ () => history.push("/checkout")}>Buy Now</button>    
                 </div>
             </div>
             <div className="cart-box2">
