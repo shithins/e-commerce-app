@@ -14,3 +14,46 @@
 .adminsolo-main::-webkit-scrollbar {
     display: none;
 }
+
+.adminsolo-order-details{
+    height: 75vh;
+    width: 80%;
+    position: absolute;
+    background-color: rgb(124, 129, 129);
+    top: 30px;
+    left: 95px;
+}
+
+.adminsolo-order-details>img{
+    position: absolute;
+        height: 55vh;
+        width: 35%;
+        top: 50px;
+        left: 50px;
+}
+
+.adminsolo-order-details>h2{
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 55%;
+    margin-top: 28px;
+}
+
+.adminsolo-order-details>h3{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-left: 55%;
+    margin-top: 24px;
+}
+
+.customer-details{
+    font-size: 1.1rem;
+    font-family: Verdana;
+    font-weight: 600;
+    margin-left: 55%;
+    margin-top: 5px;
+    padding-top: 20px;
+    
+}
