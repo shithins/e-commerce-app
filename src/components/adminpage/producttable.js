@@ -38,7 +38,7 @@ const Producttable = () => {
                         <td>{product.name}</td>
                         <td><img className="sam-image" src={`data:image/${product.images[0].type};base64,${product.images[0].image}`} alt="illa"/></td>
                         <td>{product.price}</td>
-                        <td><button><DeleteForeverIcon /></button><button><EditIcon /></button></td>
+                        <td><button><DeleteForeverIcon /></button><button onClick={ () => history.push("/editproduct")}><EditIcon /></button></td>
 
                     </tr>
                             )
