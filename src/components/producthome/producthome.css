@@ -1,5 +1,5 @@
 .product-main{
-    height: 150vh;
+    height: 85vh;
     width: 100%;
     background:url('../../images/grey-bg.jpg');
     position: relative;
@@ -12,13 +12,28 @@
 
 /*main div*/
 
+.pro-card-main{
+    position: absolute;
+    top: 10px;
+    height: 83vh;
+    width: 100%;
+    background-color:transparent;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pro-card-main::-webkit-scrollbar {
+    display: none;
+  }
+
  
 .product-card-1{
-    position: absolute;
+    position: relative;
     height: 60vh;
     width: 25vw;
-    left: 45px;
-    top: 30px;
+    margin-top: 40px;
+    margin-left: 60px;
     background-color: rgb(117, 116, 109);
     align-items: center;
     text-align: center ;
@@ -26,71 +41,7 @@
     border-radius: 15px;
     box-shadow: 10px 7px 4px rgb(48, 46, 46);
 }
-.product-card-2{
-    position: absolute;
-    height: 60vh;
-    width: 25vw;
-    left:39%;
-    top: 30px;
-    background-color: rgb(117, 116, 109);
-    align-items: center;
-    text-align: center ;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-3{
-    position: absolute;
-    height: 60vh;
-    width: 25vw;
-    right: 50px;
-    top: 30px;
-    background-color:rgb(117, 116, 109);
-    align-items: center;
-    text-align: center ;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-4{
-    position: absolute;
-    height: 60vh;
-    width: 25vw;
-    left: 45px;
-    bottom: 15vh;
-    background-color:rgb(117, 116, 109);
-    align-items: center;
-    text-align: center ;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-5{
-    position: absolute;
-    height: 60vh;
-    width: 25vw;
-    left: 39%;
-    bottom: 15vh;
-    background-color: rgb(117, 116, 109);
-    align-items: center;
-    text-align: center ;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-6{
-    position: absolute;
-    height: 60vh;
-    width: 25vw;
-    right: 50px;
-    bottom: 15vh;
-    background-color:rgb(117, 116, 109);
-    align-items: center;
-    text-align: center ;
-    color: black;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
+
 
 /*images */
 
@@ -105,51 +56,7 @@
     border-radius: 15px;
     box-shadow: 10px 7px 4px rgb(48, 46, 46);
 }
-.product-card-2>img{
-    position: absolute;
-    height: 25vh;
-    width: 20vw;
-    left:24px;
-    top: 20px;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-3>img{
-    position: absolute;
-    height: 25vh;
-    width: 20vw;
-    right: 24px;
-    top: 20px;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-4>img{
-    position: absolute;
-    height: 25vh;
-    width: 20vw;
-    bottom: 30vh;
-    left: 24px;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-5>img{
-    position: absolute;
-    height: 25vh;
-    width: 20vw;
-    bottom: 30vh;
-    left: 24px;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(48, 46, 46);
-}
-.product-card-6>img{
-    position: absolute;
-    height: 25vh;
-    width: 20vw;
-    bottom: 30vh;
-    right: 24px;
-    border-radius: 15px;
-    box-shadow: 10px 7px 4px rgb(51, 47, 47);
-}
+
 
 /*names */
 
@@ -160,43 +67,6 @@
     left: 95px;
     font-size: 25px;
     font-family: 'Times New Roman';
-    
-
-}.product-card-2>h2{
-    position: absolute;
-    top: 30vh;
-    left: 95px;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-
-}.product-card-3>h2{
-    position: absolute;
-    top: 30vh;
-    left: 95px;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-
-}.product-card-4>h2{
-    position: absolute;
-    top: 32vh;
-    left: 95px;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-
-}.product-card-5>h2{
-    position: absolute;
-    top: 32vh;
-    left: 95px;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-
-}.product-card-6>h2{
-    position: absolute;
-    top: 32vh;
-    left: 95px;
-    font-size: 25px;
-    font-family: 'Times New Roman';
-
 }
 
  /*rate */
@@ -206,32 +76,7 @@
     top: 38vh;
     left: 90px;
 }
-.product-card-2>h3{
-    position: absolute;
-    top: 38vh;
-    left: 90px;
-}
-.product-card-3>h3{
-    position: absolute;
-    top: 38vh;
-    left: 90px;
-}
 
-.product-card-4>h3{
-    position: absolute;
-    top: 38vh;
-    left: 90px;
-}
-.product-card-5>h3{
-    position: absolute;
-    top: 38vh;
-    left: 90px;
-}
-.product-card-6>h3{
-    position: absolute;
-    top: 38vh;
-    left: 90px;
-}
 
 /* BUTTONS */
 
@@ -244,90 +89,14 @@
       font-size: 10px;
       font-weight: bold;
       padding: 5px ;
+      margin-left: 0px; 
+      margin-top: 48vh;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 80ms ease-in;
+}
 
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}
-.product-card-2>button{
-    height: 30px;
-      width: 110px;
-      border-radius: 20px;
-      box-shadow: inset 2px 2px 15px #ebeeec,
-      inset -5px -5px 8px rgb(14, 13, 13);
-      font-size: 10px;
-      font-weight: bold;
-      padding: 5px ;
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}.product-card-3>button{
-    height: 30px;
-      width: 110px;
-      border-radius: 20px;
-      box-shadow: inset 2px 2px 15px #ebeeec,
-      inset -5px -5px 8px rgb(14, 13, 13);
-      font-size: 10px;
-      font-weight: bold;
-      padding: 5px ;
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}.product-card-4>button{
-    height: 30px;
-      width: 110px;
-      border-radius: 20px;
-      box-shadow: inset 2px 2px 15px #ebeeec,
-      inset -5px -5px 8px rgb(14, 13, 13);
-      font-size: 10px;
-      font-weight: bold;
-      padding: 5px ;
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}.product-card-5>button{
-    height: 30px;
-      width: 110px;
-      border-radius: 20px;
-      box-shadow: inset 2px 2px 15px #ebeeec,
-      inset -5px -5px 8px rgb(14, 13, 13);
-      font-size: 10px;
-      font-weight: bold;
-      padding: 5px ;
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}.product-card-6>button{
-    height: 30px;
-      width: 110px;
-      border-radius: 20px;
-      box-shadow: inset 2px 2px 15px #ebeeec,
-      inset -5px -5px 8px rgb(14, 13, 13);
-      font-size: 10px;
-      font-weight: bold;
-      padding: 5px ;
-      margin-left: 0px; 
-      margin-top: 48vh;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      cursor: pointer;
-      transition: transform 80ms ease-in;
-}
 
 
 /* buttons hover*/
@@ -337,26 +106,7 @@
     transition: all 1s;
     box-shadow: 15px 10px 30px rgba(235, 229, 229, 0.808);
 }
-.product-card-2>button:hover{
-    transition: all 1s;
-    box-shadow: 15px 10px 30px rgba(230, 227, 227, 0.808);
-}
-.product-card-3>button:hover{
-    transition: all 1s;
-    box-shadow: 15px 10px 30px rgba(209, 201, 201, 0.808);
-}
-.product-card-4>button:hover{
-    transition: all 1s;
-    box-shadow: 15px 10px 30px rgba(241, 241, 241, 0.808);
-}
-.product-card-5>button:hover{
-    transition: all 1s;
-    box-shadow: 15px 10px 30px rgba(243, 239, 239, 0.808);
-}
-.product-card-6>button:hover{
-    transition: all 1s;
-    box-shadow: 15px 10px 30px rgba(230, 224, 224, 0.808);
-}
+
 
 /* images hover*/
 
@@ -365,23 +115,3 @@
     transition: all 1s;
 }
 
-.product-card-2>img:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.product-card-3>img:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.product-card-4>img:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.product-card-5>img:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}
-.product-card-6>img:hover{
-    transform: scale(1.1);
-    transition: all 1s;
-}

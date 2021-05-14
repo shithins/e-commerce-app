@@ -9,6 +9,7 @@ const Cartpage = () => {
         <div className="cart-main">
             <h2>MY CART</h2>
             <button>Buy Cart</button>
+            <div className="cart-card-main">
             <div className="cart-box1">
                 <img src={cartimg1} alt="pro"/>
                 <h1>750/-</h1>
@@ -37,7 +38,7 @@ const Cartpage = () => {
                 <button onClick={ () => history.push("/checkout")}>Buy Now</button>    
                 </div>
             </div>
-            <div className="cart-box2">
+            <div className="cart-box1">
                 <img src={cartimg1} alt="pro"/>
                 <h1>750/-</h1>
                 <h2>Hoodies</h2>
@@ -62,10 +63,13 @@ const Cartpage = () => {
                     </select>
                 </div> 
                 <div className="cart-buynow">
-                <button>Buy Now</button>    
+                <button onClick={ () => history.push("/checkout")}>Buy Now</button>    
                 </div>
             </div>
-        </div>    
+            </div>
+            
+        </div>
+          
     )
 }
 
